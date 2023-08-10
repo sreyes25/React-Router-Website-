@@ -1,0 +1,44 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "category": "Interior",
+      "title": "Drywall Installation and Repair"
+    },
+    {
+      "id": 2,
+      "category": "Repairs",
+      "title": "Plumbing Fixes"
+    },
+    {
+      "id": 3,
+      "category": "Exterior",
+      "title": "Roofing Replacement"
+    },
+    {
+      "id": 4,
+      "category": "Interior",
+      "title": "Tile Installation"
+    },
+    {
+      "id": 5,
+      "category": "Exterior",
+      "title": "Deck Building"
+    },
+    {
+      "id": 6,
+      "category": "Repairs",
+      "title": "Window Replacement"
+    },
+    {
+      "id": 7,
+      "category": "Others",
+      "title": "Garden Landscaping"
+    },
+    {
+      "id": 8,
+      "category": "Others",
+      "title": "Painting and Wall Decor"
+    }
+  ]
+}

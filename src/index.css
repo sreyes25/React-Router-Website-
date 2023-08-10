@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --dark_green: #334D45;
+  --green: #00933B;
+  --red: #F5313E;
+  --pink: #E4007C;
+}
+body {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Poppins";
+  background: var(--secondary);
+}
+* {
+  color: var(--dark_green);
+  margin: 0;
+}
+p {
+  margin: 20px 0;
+}
+h1 {
+  font-size: 45px ;
+}
+button {
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  background: var(--green);
+
+}
+button:hover {
+  background: var(--dark_green);
+}
+
+
+/* navbar */
+
+header nav {
+  display: flex;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  color: #F5313E;
+  font-size: 20px;
+  margin-right: auto;
+  border-bottom: 3px solid var(--dark_green);
+}
+
+header nav a {
+  color: #000000;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 4px;
+  margin: 0 5px 0 5px;
+}
+
+header nav a.active {
+  color: #fff8f8;
+  background: var(--red);
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+
+/* help layout */
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.help-layout nav a{
+  padding: 10px;
+  border: 2px solid var(--red);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.help-layout nav a:hover{
+  border-color: var(--primary);
+}
+.help-layout nav a.active {
+  color: white;
+  background: var(--red);
+}
+
+/* faq */
+.faq .question {
+  background: rgba(0, 58, 1, 0.2);
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* contact form */
+form {
+  margin-top: 30px;
+  
+}
+form input, form label span, form textarea {
+  display: block;
+  font-size: large;
+}
+form input, form textarea {
+  background-color: #0000001b;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 0;
+  width: 400px;
+  color: var(--primary);
+}
+form label span {
+  margin-bottom: 10px;
+}
+
+/* services list */
+.services > a {
+  display: block;
+  background: rgba(0, 58, 1, 0.2);
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.services > a:hover p {
+  color: var(--red);
+}
+.services p {
+  margin: 0;
+}
+.services > a p:last-child {
+ font-size: 0.8em;
+ color: var(--primary);
+}
+
+
+/* services details */
+.service-details {
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
