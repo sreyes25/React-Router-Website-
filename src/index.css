@@ -123,6 +123,7 @@ form input, form textarea {
   color: var(--primary);
 }
 form label span {
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
