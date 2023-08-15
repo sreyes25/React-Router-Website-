@@ -6,7 +6,8 @@ export default function RootLayout() {
     <div className="root-layout">
       <header>
         <nav>
-          <h1>Infiniker</h1>
+          <img className="logo" src="./logo.png" alt="Construction Image" /> 
+          <h1>Infiniker </h1>
           <NavLink to="/">Home</NavLink>
           <NavLink to="services">Services</NavLink>
           <NavLink to="about">About</NavLink>

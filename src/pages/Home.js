@@ -1,38 +1,4 @@
 
-import React from 'react';
-
-const styles = {
-  container: {
-    fontFamily: 'Arial, sans-serif',
-    padding: '20px',
-    textAlign: 'center',
-  },
-  header: {
-    backgroundColor: '#4CAF50',
-    color: 'white',
-    padding: '10px 0',
-  },
-  button: {
-    backgroundColor: '#4CAF50',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-    borderRadius: '5px',
-    marginTop: '20px',
-  },
-  nav: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    padding: '10px 0',
-    borderBottom: '1px solid #ccc',
-  },
-  footer: {
-    marginTop: '20px',
-    borderTop: '1px solid #ccc',
-    padding: '10px 0',
-  },
-};
 
 export default function Home() {
   const handleEstimateClick = () => {
@@ -40,21 +6,43 @@ export default function Home() {
   };
 
   return (
-    <div style={styles.container}>
-      <div >
-        <h1>Infiniker Construction</h1>
-      </div>
+    
+  
+    <section class="bg-white-50">
+  <div
+    class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+  >
+    <div class="mx-auto max-w-xl text-center">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">
+        Infinker
+        <strong class="font-extrabold text-red-700 sm:block">
+          Construction
+        </strong>
+      </h1>
 
-      <p>For all your large and small home improvement needs</p>
-      <button style={styles.button} onClick={handleEstimateClick}>
-        Request Estimate
-      </button>
-      <img src="https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Construction Image" />
+      <p class="mt-4 sm:text-xl/relaxed">
+        For all your large and small home improvement needs
+      </p>
 
-      <div style={styles.footer}>
-        <p>&copy; 2023 Infiniker Construction</p>
-        <p>Email: contact@infiniker.com | Phone: +1 (631) 569-1944</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          class="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+          href="/get-started"
+        >
+          Get Estimate
+        </a>
+
+        <a
+          class="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
+          href="/about"
+        >
+          Learn More
+        </a>
       </div>
     </div>
+  </div>
+</section>
+
+
   );
 }
